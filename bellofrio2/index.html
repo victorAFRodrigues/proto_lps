@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bello Frio Refrigerações | Assistência Técnica Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'azul-escuro': '#070743',
+                        'verde-agua': '#169D99',
+                        'amarelo-destaque': '#B9CC01',
+                        'cinza-fundo': '#E6E8E3',
+                        'cinza-card': '#D7DACF',
+                        'cinza-texto': '#4A4A4A',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .hero-gradient { background: radial-gradient(circle at top right, #169D9922, transparent), #070743; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+    </style>
+</head>
+<body class="bg-cinza-fundo text-azul-escuro antialiased selection:bg-verde-agua selection:text-white">
+
+<a href="https://wa.me/5511999999999" class="fixed bottom-8 right-8 z-50 flex items-center group">
+    <span class="bg-azul-escuro text-white px-4 py-2 rounded-l-full text-sm font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-xl">Falar com técnico</span>
+    <div class="bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 transition-all duration-300 relative">
+        <i class="fab fa-whatsapp"></i>
+        <span class="absolute -top-1 -right-1 flex h-4 w-4">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amarelo-destaque opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-4 w-4 bg-amarelo-destaque"></span>
+            </span>
+    </div>
+</a>
+
+<nav class="bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b border-azul-escuro/5">
+    <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-azul-escuro rounded-lg flex items-center justify-center">
+                <i class="fas fa-snowflake text-verde-agua text-xl"></i>
+            </div>
+            <span class="font-extrabold text-2xl tracking-tight text-azul-escuro uppercase">Bello<span class="text-verde-agua italic">Frio</span></span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a href="#servicos" class="hover:text-verde-agua transition">Serviços</a>
+            <a href="#como-funciona" class="hover:text-verde-agua transition">Como Funciona</a>
+            <a href="https://wa.me/5511999999999" class="bg-amarelo-destaque px-6 py-2.5 rounded-full text-azul-escuro font-bold hover:shadow-lg transition">Agendar Visita</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-gradient text-white py-20 lg:py-32 relative overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 rounded-full mb-6">
+                <span class="w-2 h-2 bg-amarelo-destaque rounded-full animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-widest text-verde-agua">Técnicos de plantão na sua região</span>
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
+                Sua geladeira <br> <span class="text-amarelo-destaque leading-normal">nova de novo.</span>
+            </h1>
+            <p class="text-lg text-cinza-medio/80 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                Não deixe seus alimentos estragarem. Oferecemos assistência técnica de alto padrão para todas as marcas, com peças originais e garantia em nota.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                <a href="https://wa.me/5511999999999" class="w-full sm:w-auto bg-amarelo-destaque text-azul-escuro px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:shadow-[0_0_30px_rgba(185,204,1,0.3)] hover:-translate-y-1 transition-all duration-300">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    CHAMAR NO WHATSAPP
+                </a>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center lg:justify-start gap-8 opacity-60">
+                <div class="flex items-center gap-2 text-sm italic"><i class="fas fa-shield-alt text-verde-agua"></i> 90 dias de garantia</div>
+                <div class="flex items-center gap-2 text-sm italic"><i class="fas fa-truck-fast text-verde-agua"></i> Chegamos hoje</div>
+            </div>
+        </div>
+
+        <div class="hidden lg:block relative">
+            <div class="absolute inset-0 bg-verde-agua/20 blur-[100px] rounded-full"></div>
+            <img src="https://img.freepik.com/free-photo/repairman-fixing-refrigerator-with-screwdriver_23-2148174415.jpg?t=st=1710000000&exp=1710003600&hmac=placeholder" alt="Técnico Bello Frio" class="relative z-10 rounded-3xl shadow-2xl border border-white/10 object-cover w-full h-[500px] grayscale-[20%] hover:grayscale-0 transition duration-700">
+        </div>
+    </div>
+</header>
+
+<section class="py-12 bg-white border-b border-azul-escuro/5">
+    <div class="container mx-auto px-6 text-center">
+        <p class="text-xs font-bold text-cinza-escuro/60 uppercase tracking-[0.3em] mb-8">Especialistas nas melhores marcas</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale">
+            <span class="text-2xl font-bold tracking-tighter">BRASTEMP</span>
+            <span class="text-2xl font-bold tracking-tighter">SAMSUNG</span>
+            <span class="text-2xl font-bold tracking-tighter">ELECTROLUX</span>
+            <span class="text-2xl font-bold tracking-tighter">CONSUL</span>
+            <span class="text-2xl font-bold tracking-tighter">LG</span>
+        </div>
+    </div>
+</section>
+
+<section id="servicos" class="py-24">
+    <div class="container mx-auto px-6">
+        <div class="max-w-2xl mx-auto text-center mb-20">
+            <h2 class="text-4xl font-extrabold mb-6 tracking-tight">O que está acontecendo com seu refrigerador?</h2>
+            <p class="text-cinza-texto">Identificamos o problema em minutos. Veja se algum destes casos é o seu:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="glass p-8 rounded-[32px] border border-white shadow-sm card-hover transition-all duration-300">
+                <div class="w-14 h-14 bg-white rounded-2xl shadow-inner flex items-center justify-center mb-6 text-verde-agua text-2xl italic font-bold">01</div>
+                <h3 class="text-xl font-bold mb-3">Degelo Ineficiente</h3>
+                <p class="text-sm text-cinza-texto leading-relaxed">Formação de gelo excessiva ou o freezer parou de congelar? Atuamos no sistema de degelo automático.</p>
+            </div>
+            <div class="glass p-8 rounded-[32px] border border-white shadow-sm card-hover transition-all duration-300">
+                <div class="w-14 h-14 bg-white rounded-2xl shadow-inner flex items-center justify-center mb-6 text-verde-agua text-2xl italic font-bold">02</div>
+                <h3 class="text-xl font-bold mb-3">Vazamento Interno</h3>
+                <p class="text-sm text-cinza-texto leading-relaxed">Água acumulada na parte inferior ou escorrendo por fora? Desobstruímos drenos e revisamos vedações.</p>
+            </div>
+            <div class="glass p-8 rounded-[32px] border border-white shadow-sm card-hover transition-all duration-300">
+                <div class="w-14 h-14 bg-white rounded-2xl shadow-inner flex items-center justify-center mb-6 text-verde-agua text-2xl italic font-bold">03</div>
+                <h3 class="text-xl font-bold mb-3">Ciclo de Motor</h3>
+                <p class="text-sm text-cinza-texto leading-relaxed">O motor liga e desliga muito rápido? Pode ser o compressor ou relés de partida. Avaliamos na hora.</p>
+            </div>
+            <div class="glass p-8 rounded-[32px] border border-white shadow-sm card-hover transition-all duration-300">
+                <div class="w-14 h-14 bg-white rounded-2xl shadow-inner flex items-center justify-center mb-6 text-verde-agua text-2xl italic font-bold">04</div>
+                <h3 class="text-xl font-bold mb-3">Placa Queimada</h3>
+                <p class="text-sm text-cinza-texto leading-relaxed">A geladeira nem dá sinal de vida após queda de energia? Realizamos a troca ou reparo de placas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="como-funciona" class="bg-azul-escuro text-white py-24 relative overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col lg:flex-row items-end justify-between mb-20 gap-6">
+            <div class="max-w-xl">
+                <h2 class="text-4xl font-extrabold mb-4">Experiência sem estresse</h2>
+                <p class="text-cinza-medio opacity-70 italic">Do primeiro clique à geladeira gelando: simplicidade é nossa prioridade.</p>
+            </div>
+            <a href="https://wa.me/5511999999999" class="text-amarelo-destaque font-bold border-b-2 border-amarelo-destaque pb-1 hover:opacity-80 transition">Ver disponibilidade para hoje →</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group">
+                <div class="w-12 h-12 rounded-full border-2 border-verde-agua flex items-center justify-center mb-6 group-hover:bg-verde-agua transition-all duration-500">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-4 italic">Solicitação</h4>
+                <p class="text-cinza-escuro leading-relaxed">Você envia uma foto ou vídeo do defeito pelo WhatsApp para uma triagem técnica imediata.</p>
+            </div>
+            <div class="group">
+                <div class="w-12 h-12 rounded-full border-2 border-verde-agua flex items-center justify-center mb-6 group-hover:bg-verde-agua transition-all duration-500">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-4 italic">Agendamento</h4>
+                <p class="text-cinza-escuro leading-relaxed">Nossa equipe confirma o horário da visita. Você recebe o nome do técnico que irá até sua casa por segurança.</p>
+            </div>
+            <div class="group">
+                <div class="w-12 h-12 rounded-full border-2 border-verde-agua flex items-center justify-center mb-6 group-hover:bg-verde-agua transition-all duration-500">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-4 italic">Execução</h4>
+                <p class="text-cinza-escuro leading-relaxed">O técnico realiza o conserto no local. Testamos tudo antes de sair e entregamos seu certificado de garantia.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 relative">
+    <div class="container mx-auto px-6 text-center">
+        <div class="bg-white p-12 lg:p-20 rounded-[48px] shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-amarelo-destaque/10 blur-[80px] rounded-full -mr-32 -mt-32"></div>
+
+            <h2 class="text-4xl lg:text-6xl font-black mb-8 leading-tight">Pronto para resolver <br> seu problema <span class="text-verde-agua italic">agora?</span></h2>
+            <p class="text-xl text-cinza-texto mb-12 max-w-2xl mx-auto">
+                Temos técnicos próximos a você prontos para sair. Orçamento justo e sem letras miúdas.
+            </p>
+
+            <div class="flex flex-col items-center gap-6">
+                <a href="https://wa.me/5511999999999" class="bg-azul-escuro text-white px-12 py-6 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-xl flex items-center gap-4">
+                    <i class="fab fa-whatsapp text-2xl text-amarelo-destaque"></i>
+                    AGENDAR VISITA TÉCNICA
+                </a>
+                <p class="text-sm font-bold text-cinza-escuro tracking-widest uppercase">Atendimento humanizado via WhatsApp</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-cinza-fundo py-16 border-t border-azul-escuro/5">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-azul-escuro rounded flex items-center justify-center">
+                    <i class="fas fa-snowflake text-verde-agua text-sm"></i>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight uppercase">Bello<span class="text-verde-agua">Frio</span></span>
+            </div>
+            <p class="text-sm text-cinza-texto font-medium">© 2026 Especialistas em Refrigeração de Alta Performance.</p>
+            <div class="flex gap-6 text-azul-escuro/40">
+                <i class="fab fa-instagram text-xl hover:text-verde-agua cursor-pointer transition"></i>
+                <i class="fab fa-facebook text-xl hover:text-verde-agua cursor-pointer transition"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
